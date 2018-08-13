@@ -47,7 +47,7 @@ class Client {
 
   Map<String, String> get headers => {
         'Authorization': 'Bearer $apiToken',
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json, charset: utf-8',
       };
 
   InMemoryCache get cache => this._cache;
